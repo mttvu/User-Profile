@@ -16,7 +16,7 @@ class ProfileActivity : AppCompatActivity() {
     }
     private fun initViews() {
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
-        supportActionBar?.title = "This is your profile!"
+        supportActionBar?.title = getString(R.string.title_profile)
         val profile = intent.getParcelableExtra<Profile>(PROFILE_EXTRA)
 
         if (profile != null) {
